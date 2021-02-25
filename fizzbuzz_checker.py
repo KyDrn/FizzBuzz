@@ -2,7 +2,7 @@ class FizzBuzzChecker:
     
     @staticmethod
     def is_fizzbuzz(number):
-        if "15":
+        if type(number) is not int:
             raise TypeError
         if number <= 0:
             raise ValueError
