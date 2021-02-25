@@ -26,3 +26,7 @@ class FizzBuzzTest(unittest.TestCase):
     def test_should_return_alice_number_by_default(self):
         actual = FizzBuzzChecker.is_fizzbuzz(17)
         self.assertEqual(actual, 17)
+
+    def test_value_type(self):
+        with self.assertRaises(TypeError):
+            FizzBuzzChecker.is_fizzbuzz("15")
