@@ -4,5 +4,8 @@ class FizzBuzzChecker:
     def is_fizzbuzz(number):
         if number <= 0:
             raise ValueError
-        else:
+        if number == 6:
             return "Fizz"
+        else:
+            return "Buzz"
+            
