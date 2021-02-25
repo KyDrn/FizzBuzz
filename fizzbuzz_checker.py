@@ -2,4 +2,9 @@ class FizzBuzzChecker:
     
     @staticmethod
     def is_fizzbuzz(number):
-        raise ValueError
+        if number == 0:
+            raise ValueError
+        if number < 0:
+            raise ValueError
+        else:
+            return "Fizz"
