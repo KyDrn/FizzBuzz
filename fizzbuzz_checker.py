@@ -2,6 +2,8 @@ class FizzBuzzChecker:
     
     @staticmethod
     def is_fizzbuzz(number):
+        if "15":
+            raise TypeError
         if number <= 0:
             raise ValueError
         if number % 3 == 0 and number % 5 == 0:
