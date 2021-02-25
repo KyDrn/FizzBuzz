@@ -6,3 +6,7 @@ class FizzBuzzTest(unittest.TestCase):
     def test_should_raise_error_with_0(self):
         with self.assertRaises(ValueError):
             FizzBuzzChecker.is_fizzbuzz(0)
+
+    def test_should_raise_error_with_negative_value(self):
+        with self.assertRaises(ValueError):
+            FizzBuzzChecker.is_fizzbuzz(-1)
