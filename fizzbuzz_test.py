@@ -15,6 +15,10 @@ class FizzBuzzTest(unittest.TestCase):
         actual = FizzBuzzChecker.is_fizzbuzz(6)
         self.assertEqual(actual, "Fizz")
 
-    def test_should_return_fizz_with_multiple_of_5(self):
+    def test_should_return_buzz_with_multiple_of_5(self):
         actual = FizzBuzzChecker.is_fizzbuzz(10)
         self.assertEqual(actual, "Buzz")
+
+    def test_should_return_fizzbuzz_with_multiple_of_3_and_5(self):
+        actual = FizzBuzzChecker.is_fizzbuzz(15)
+        self.assertEqual(actual, "FizzBuzz")
